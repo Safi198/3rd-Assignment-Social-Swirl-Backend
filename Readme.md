@@ -1,6 +1,3 @@
-Certainly! Here's the README.md file formatted as requested:
-
-```markdown
 # Social Swirl Backend API
 
 ## Introduction
