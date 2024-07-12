@@ -10,7 +10,7 @@ const authenticationJWT = (req, res, next) => {
             .status(401);
     }
 
-    const token = authHeader.split(" ")[1];
+    const token = authHeader;
 
     jwToken.verify(token, process.env.SECRET_KEY, (err, user) => {
         if (err) {

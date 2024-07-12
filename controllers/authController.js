@@ -65,8 +65,7 @@ exports.login = async (req, res) => {
 
         const token = jwtoken.sign(
             { username: uUser.username },
-            process.env.SECRET_KEY,
-            { expiresIn: "1h" }
+            process.env.SECRET_KEY
         );
 
         res.json({ success: "Login Successfully", token: token }).status(200);
